@@ -1,0 +1,441 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.nav-bar{
+    height: 60px;
+    background-color:#131921;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.nav-logo{
+height: 60px;
+width:145px;
+display:flex;
+align-items: center;
+}
+
+.logo{
+    
+/* background-image: url("images/amazon-nav.png"); */
+background-image: url(images/amazon_logoak.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    width:100%;
+    height: 60px;
+    /* padding-bottom: 25px; */
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:2px solid white;
+}
+
+/*box2*/
+.address-first{
+    margin-left: 19px;
+    font-size: 0.85rem;
+    color: #cccccc;
+}
+.address-sec{
+  font-size: 1rem;   
+}
+.address-icon{
+    display: flex;
+    align-items: center;
+   
+}
+/*box3*/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+height: 40px;
+background-color:#f58a42;
+width:420px;
+border-radius: 5px;
+}
+.select-search{
+   background-color: #f3f3f3;
+   width:60px;
+    text-align: center;
+   border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+      border:none;
+}
+.search-input{
+  width: 100%;
+
+border:none;
+font-size:1rem;
+}
+.search-icon{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+}
+
+/*box4*/
+span{
+    font-size: 0.60rem;
+}
+.nav-sec{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+/**box 6**/
+.nav-cart i{
+    font-size: 35px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/**pannnel**/
+.panel{
+  height:40px;  
+  background-color: #222f3d;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.panel-option p{
+display: inline;
+margin-left: 15px;
+}
+.panel-option a{
+    text-decoration: none;
+    color: white;
+}
+.panel-option{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.panel-deals{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.hero-section{
+    background-image:url("images/hero-image.jpg") ;
+    height: 410px; 
+    display:flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    background-color: white;
+    color:black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+.hero-msg a{
+    color:#007185; 
+}
+/**shop-section**/
+.shop-section{
+    display:flex;
+   flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:#e2e7e6;
+}
+.box{
+    height:400px;
+   /* border: 2px solid black; */
+    width:22%;
+    background-color: white;
+
+
+   margin-top: 15px;
+}
+.box-image{
+    height: 300px;
+    background-size:contain;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-content{
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+.box-content{
+    color: #007185;
+}
+/**footer**/
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{
+background-color: #37475a;
+color:white;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 330px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+display: block;
+font-size: 0.85rem;
+margin-top: 10px;
+color: #dddddd;
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: rgb(130, 13, 13);
+    border-top: 1px solid rgb(230, 227, 233);
+    height:6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-logo{ 
+/* background-image: url("images/amazon-logoak.png"); */
+background-image: url(images/amazon_logoak.png);
+background-repeat: no-repeat;
+background-position: center;
+    background-size:contain;
+    width: 10rem;
+    height:4rem;
+    /* padding: .2rem; */
+    
+    /* padding-bottom: 25px; */
+}
+
+
+
+.foot-panel4{
+  background-color: #0f1111;  
+  color: white;
+  height: 100px;
+font-size: 0.7rem;
+text-align: center;
+}
+.pages{
+
+padding-top: 35px;
+}
+.copyright{
+
+padding-top: 5px;
+}
+
+/* ================================
+   RESPONSIVE MEDIA QUERIES
+   ================================ */
+
+/* Tablets and small laptops */
+@media (max-width: 992px) {
+    .nav-bar{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 0;
+        justify-content: center;
+        row-gap: 8px;
+        column-gap: 12px;
+    }
+    /* Keep logo, address, sign-in, returns, cart together on the top row */
+    .nav-logo{ order: 1; }
+    .nav-address{ order: 2; }
+    .nav-signIn{ order: 3; }
+    .nav-returns{ order: 4; }
+    .nav-cart{ order: 5; }
+    /* Search always drops to its own full-width row below */
+    .nav-search{
+        order: 6;
+        flex-basis: 100%;
+        width: 92%;
+        margin: 4px auto 0;
+    }
+    .box{
+        width: 30%;
+    }
+}
+
+/* Tablets (portrait) */
+@media (max-width: 768px) {
+    .nav-bar{
+        justify-content: space-around;
+        column-gap: 8px;
+    }
+    .nav-logo{
+        width: 100px;
+    }
+    .nav-search{
+        width: 100%;
+        margin-top: 8px;
+    }
+    .nav-address, .nav-signIn, .nav-returns{
+        display: flex;
+        flex-direction: column;
+    }
+    .panel-option{
+        width: 90%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .panel-option p{
+        margin-left: 10px;
+    }
+    .box{
+        width: 45%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .box-image{
+        height: 200px;
+    }
+    .hero-section{
+        height: 280px;
+    }
+    .hero-msg{
+        width: 92%;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .foot-panel2{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .foot-logo{
+        width: 8rem;
+        height: 3.2rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .nav-bar{
+        height: auto;
+        column-gap: 6px;
+    }
+    .nav-cart{
+        order: 5;
+        flex-shrink: 0;
+    }
+    .nav-cart i{
+        font-size: 26px;
+    }
+    .nav-logo{
+        width: 90px;
+        height: 40px;
+    }
+    .logo{
+        height: 40px;
+    }
+    .nav-address .address-first,
+    .nav-address .address-sec{
+        font-size: 0.75rem;
+    }
+    .nav-search{
+        height: 36px;
+    }
+    .search-input{
+        font-size: 0.85rem;
+    }
+    .panel{
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    .panel-al{
+        flex-shrink: 0;
+        padding: 0 10px;
+    }
+    .panel-deals{
+        display: none;
+    }
+    .box{
+        width: 100%;
+    }
+    .box-image{
+        height: 220px;
+    }
+    .hero-section{
+        height: 200px;
+    }
+    .hero-msg{
+        font-size: 0.7rem;
+        height: auto;
+        padding: 8px;
+    }
+    .foot-logo{
+        width: 6.5rem;
+        height: 2.6rem;
+    }
+}
+
+/* Extra small phones (iPhone SE and smaller, ~400px and below) */
+@media (max-width: 400px) {
+    .nav-bar{
+        column-gap: 3px;
+        padding: 6px 0;
+    }
+    .nav-logo{
+        width: 60px;
+        height: 32px;
+    }
+    .logo{
+        height: 32px;
+    }
+    /* Hide the "Deliver to" label, keep only the location so address takes less room */
+    .nav-address .address-first{
+        display: none;
+    }
+    .nav-address{
+        margin-left: 0;
+    }
+    .address-icon i{
+        font-size: 0.8rem;
+    }
+    .address-sec{
+        font-size: 0.75rem;
+    }
+    /* Collapse sign-in/returns to a single compact line, drop the second line label */
+    .nav-signIn, .nav-returns{
+        font-size: 0.65rem;
+        padding: 0 2px;
+    }
+    .nav-signIn .nav-sec, .nav-returns .nav-sec{
+        display: none;
+    }
+    .nav-cart{
+        font-size: 0.65rem;
+    }
+    .nav-cart i{
+        font-size: 20px;
+    }
+}
+
+
+
